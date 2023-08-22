@@ -4,8 +4,7 @@
     hardware.url = "github:nixos/nixos-hardware/master";
     nixfiles = {
       inputs.nixpkgs.follows = "nixpkgs";
-      # url = "github:thoughtfull-systems/nixfiles/main";
-      url = "/home/paul/src/thoughtfull/nixfiles";
+      url = "github:thoughtfull-systems/nixfiles/main";
     };
     nixpkgs.url = "github:thoughtfull-systems/nixpkgs/nixos-23.05";
     secrets.url = "git+ssh://git@github.com/thoughtfull-systems/nixfiles-secrets";
