@@ -3,7 +3,7 @@
     "agenix": {
       "inputs": {
         "darwin": "darwin",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs_2"
       },
       "locked": {
         "lastModified": 1680281360,
@@ -23,7 +23,7 @@
     "darwin": {
       "inputs": {
         "nixpkgs": [
-          "nixfiles",
+          "thoughtfull",
           "agenix",
           "nixpkgs"
         ]
@@ -78,7 +78,7 @@
     "home-manager": {
       "inputs": {
         "nixpkgs": [
-          "nixfiles",
+          "thoughtfull",
           "nixpkgs"
         ]
       },
@@ -97,48 +97,7 @@
         "type": "github"
       }
     },
-    "nixfiles": {
-      "inputs": {
-        "agenix": "agenix",
-        "hardware": "hardware_2",
-        "home-manager": "home-manager",
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "secrets": "secrets",
-        "unstable": "unstable"
-      },
-      "locked": {
-        "lastModified": 1692703060,
-        "narHash": "sha256-CWH/cwBSUmikhhlhtG9zzCJzVcTvu4FBK0lvmAZ59II=",
-        "ref": "refs/heads/main",
-        "rev": "de1b00f950459bf724d54322161548ef79bb1d40",
-        "revCount": 384,
-        "type": "git",
-        "url": "file:///home/paul/src/thoughtfull/nixfiles"
-      },
-      "original": {
-        "type": "git",
-        "url": "file:///home/paul/src/thoughtfull/nixfiles"
-      }
-    },
     "nixpkgs": {
-      "locked": {
-        "lastModified": 1677676435,
-        "narHash": "sha256-6FxdcmQr5JeZqsQvfinIMr0XcTyTuR7EXX0H3ANShpQ=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "a08d6979dd7c82c4cef0dcc6ac45ab16051c1169",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs_2": {
       "locked": {
         "lastModified": 1692665046,
         "narHash": "sha256-0yGaRvVQ3ONKeRxVi39mOwbqCOzLzEvX1LuRtTENBh8=",
@@ -154,15 +113,46 @@
         "type": "github"
       }
     },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1677676435,
+        "narHash": "sha256-6FxdcmQr5JeZqsQvfinIMr0XcTyTuR7EXX0H3ANShpQ=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "a08d6979dd7c82c4cef0dcc6ac45ab16051c1169",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "hardware": "hardware",
-        "nixfiles": "nixfiles",
-        "nixpkgs": "nixpkgs_2",
-        "secrets": "secrets_2"
+        "nixpkgs": "nixpkgs",
+        "secrets": "secrets",
+        "thoughtfull": "thoughtfull"
       }
     },
     "secrets": {
+      "locked": {
+        "lastModified": 1692615992,
+        "narHash": "sha256-L2uXSDKq7IuQBQPLcqashgr8x3UezPNzdb2kQ/GpS9A=",
+        "ref": "refs/heads/main",
+        "rev": "2102ec3365b1829e60d4898c85488bab9d3f290c",
+        "revCount": 9,
+        "type": "git",
+        "url": "ssh://git@github.com/thoughtfull-systems/nixfiles-secrets"
+      },
+      "original": {
+        "type": "git",
+        "url": "ssh://git@github.com/thoughtfull-systems/nixfiles-secrets"
+      }
+    },
+    "secrets_2": {
       "locked": {
         "lastModified": 1691761007,
         "narHash": "sha256-wgxYQeeHNF5AQaw1NNLrtBO6d4F6pdyoCFJ+SS77E/E=",
@@ -177,19 +167,30 @@
         "url": "ssh://git@github.com/thoughtfull-systems/nixfiles-secrets"
       }
     },
-    "secrets_2": {
+    "thoughtfull": {
+      "inputs": {
+        "agenix": "agenix",
+        "hardware": "hardware_2",
+        "home-manager": "home-manager",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "secrets": "secrets_2",
+        "unstable": "unstable"
+      },
       "locked": {
-        "lastModified": 1692615992,
-        "narHash": "sha256-L2uXSDKq7IuQBQPLcqashgr8x3UezPNzdb2kQ/GpS9A=",
-        "ref": "refs/heads/main",
-        "rev": "2102ec3365b1829e60d4898c85488bab9d3f290c",
-        "revCount": 9,
-        "type": "git",
-        "url": "ssh://git@github.com/thoughtfull-systems/nixfiles-secrets"
+        "lastModified": 1692728184,
+        "narHash": "sha256-8HLK0ucvjz7sBWnEt6xh2dRgTGK6cr+U4npCl9iWV08=",
+        "owner": "thoughtfull-systems",
+        "repo": "nixfiles",
+        "rev": "b14763bd0bce385a142ec801cf4c8d8124315b43",
+        "type": "github"
       },
       "original": {
-        "type": "git",
-        "url": "ssh://git@github.com/thoughtfull-systems/nixfiles-secrets"
+        "owner": "thoughtfull-systems",
+        "ref": "main",
+        "repo": "nixfiles",
+        "type": "github"
       }
     },
     "unstable": {

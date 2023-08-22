@@ -2,14 +2,14 @@
   description = "NixOS configuration";
   inputs = {
     hardware.url = "github:nixos/nixos-hardware/master";
-    nixfiles = {
+    nixpkgs.url = "github:thoughtfull-systems/nixpkgs/nixos-23.05";
+    secrets.url = "git+ssh://git@github.com/thoughtfull-systems/nixfiles-secrets";
+    thoughtfull = {
       inputs.nixpkgs.follows = "nixpkgs";
       url = "github:thoughtfull-systems/nixfiles/main";
     };
-    nixpkgs.url = "github:thoughtfull-systems/nixpkgs/nixos-23.05";
-    secrets.url = "git+ssh://git@github.com/thoughtfull-systems/nixfiles-secrets";
   };
-  outputs = { hardware, nixfiles, nixpkgs, secrets, ... }@inputs: rec {
+  outputs = { hardware, nixpkgs, secrets, thoughtfull, ... }@inputs: rec {
     homeManagerModules = import ./homeManagerModules;
     nixosConfigurations = {
       hemera = nixpkgs.lib.nixosSystem {
@@ -20,7 +20,7 @@
         specialArgs = {
           secrets = secrets.hemera;
           stadig = nixosModules;
-          thoughtfull = nixfiles.nixosModules;
+          thoughtfull = thoughtfull.nixosModules;
         };
         system = "x86_64-linux";
       };
@@ -29,7 +29,7 @@
         specialArgs = {
           secrets = secrets.raspi3b;
           stadig = nixosModules;
-          thoughtfull = nixfiles.nixosModules;
+          thoughtfull = thoughtfull.nixosModules;
         };
         system = "aarch64-linux";
       };
@@ -38,7 +38,7 @@
         specialArgs = {
           secrets = secrets.ziph;
           stadig = nixosModules;
-          thoughtfull = nixfiles.nixosModules;
+          thoughtfull = thoughtfull.nixosModules;
         };
         system = "x86_64-linux";
       };
