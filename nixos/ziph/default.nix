@@ -7,7 +7,6 @@
     ./filesystems.nix
     ./hardware-configuration.nix
     ./paul.nix
-    ./root.nix
     thoughtfull.thoughtfull
   ];
   i18n = {

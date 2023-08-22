@@ -109,18 +109,17 @@
         "unstable": "unstable"
       },
       "locked": {
-        "lastModified": 1692400241,
-        "narHash": "sha256-y3DCiVvdehnSjmriALtgsI2l2dLT48sTOZwy3xap5cc=",
-        "owner": "thoughtfull-systems",
-        "repo": "nixfiles",
-        "rev": "141d769088b1d0a703832b8880efd92cba5d2062",
-        "type": "github"
+        "lastModified": 1692703060,
+        "narHash": "sha256-CWH/cwBSUmikhhlhtG9zzCJzVcTvu4FBK0lvmAZ59II=",
+        "ref": "refs/heads/main",
+        "rev": "de1b00f950459bf724d54322161548ef79bb1d40",
+        "revCount": 384,
+        "type": "git",
+        "url": "file:///home/paul/src/thoughtfull/nixfiles"
       },
       "original": {
-        "owner": "thoughtfull-systems",
-        "ref": "main",
-        "repo": "nixfiles",
-        "type": "github"
+        "type": "git",
+        "url": "file:///home/paul/src/thoughtfull/nixfiles"
       }
     },
     "nixpkgs": {

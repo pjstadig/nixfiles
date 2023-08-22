@@ -13,7 +13,6 @@
     ./filesystems.nix
     ./hardware-configuration.nix
     ./paul.nix
-    ./root.nix
     thoughtfull.default
   ];
   networking.hostName = "hemera";

@@ -4,12 +4,14 @@
     hardware.url = "github:nixos/nixos-hardware/master";
     nixfiles = {
       inputs.nixpkgs.follows = "nixpkgs";
-      url = "github:thoughtfull-systems/nixfiles/main";
+      # url = "github:thoughtfull-systems/nixfiles/main";
+      url = "/home/paul/src/thoughtfull/nixfiles";
     };
     nixpkgs.url = "github:thoughtfull-systems/nixpkgs/nixos-23.05";
     secrets.url = "git+ssh://git@github.com/thoughtfull-systems/nixfiles-secrets";
   };
   outputs = { hardware, nixfiles, nixpkgs, secrets, ... }@inputs: rec {
+    homeManagerModules = import ./homeManagerModules;
     nixosConfigurations = {
       hemera = nixpkgs.lib.nixosSystem {
         modules = [
@@ -18,6 +20,7 @@
         ];
         specialArgs = {
           secrets = secrets.hemera;
+          stadig = nixosModules;
           thoughtfull = nixfiles.nixosModules;
         };
         system = "x86_64-linux";
@@ -26,6 +29,7 @@
         modules = [ ./nixos/raspi3b ];
         specialArgs = {
           secrets = secrets.raspi3b;
+          stadig = nixosModules;
           thoughtfull = nixfiles.nixosModules;
         };
         system = "aarch64-linux";
@@ -34,10 +38,12 @@
         modules = [ ./nixos/ziph ];
         specialArgs = {
           secrets = secrets.ziph;
+          stadig = nixosModules;
           thoughtfull = nixfiles.nixosModules;
         };
         system = "x86_64-linux";
       };
     };
+    nixosModules = import ./nixosModules;
   };
 }
