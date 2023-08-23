@@ -6,7 +6,7 @@
     secrets.url = "git+ssh://git@github.com/thoughtfull-systems/nixfiles-secrets";
     thoughtfull = {
       inputs.nixpkgs.follows = "nixpkgs";
-      url = "/home/paul/src/thoughtfull/nixfiles";
+      url = "github:thoughtfull-systems/nixfiles/main";
     };
   };
   outputs = { hardware, nixpkgs, secrets, thoughtfull, ... }@inputs: rec {
