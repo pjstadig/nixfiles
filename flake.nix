@@ -43,6 +43,6 @@
         system = "x86_64-linux";
       };
     };
-    nixosModules = import ./nixosModules;
+    nixosModules = import ./nixosModules inputs;
   };
 }

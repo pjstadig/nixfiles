@@ -1,4 +1,4 @@
-{ pkgs, thoughtfull, ... } : {
+{ pkgs, stadig, thoughtfull, ... } : {
   home = {
     packages = with pkgs; [
       adapta-gtk-theme
@@ -12,7 +12,7 @@
     stateVersion = "22.05";
   };
   imports = [
-    thoughtfull.paul
+    stadig.paul
     thoughtfull.syncthing
   ];
   thoughtfull = {
