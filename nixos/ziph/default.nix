@@ -1,4 +1,4 @@
-{ config, thoughtfull, ... }: {
+{ config, stadig, thoughtfull, ... }: {
   boot.loader = {
     efi.canTouchEfiVariables = true;
     systemd-boot.enable = true;
@@ -7,7 +7,8 @@
     ./filesystems.nix
     ./hardware-configuration.nix
     ./paul.nix
-    thoughtfull.thoughtfull
+    stadig.default
+    thoughtfull.default
   ];
   i18n = {
     extraLocaleSettings = {
