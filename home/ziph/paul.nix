@@ -1,6 +1,6 @@
-{ thoughtfull, ... } : {
+{ stadig, thoughtfull, ... } : {
   imports = [
-    thoughtfull.paul
+    stadig.paul
     thoughtfull.syncthing
   ];
   thoughtfull = {

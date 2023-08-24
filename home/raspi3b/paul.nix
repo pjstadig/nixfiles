@@ -1,7 +1,7 @@
-{ thoughtfull, ... }: {
+{ stadig, thoughtfull, ... }: {
   home.stateVersion = "22.05";
   imports = [
-    thoughtfull.paul
+    stadig.paul
     thoughtfull.syncthing
   ];
   programs = {
