@@ -11,7 +11,7 @@
       url = "github:thoughtfull-systems/home-manager/release-23.05";
     };
     nixpkgs.url = "github:thoughtfull-systems/nixpkgs/nixos-23.05";
-    secrets.url = "git+ssh://git@github.com/thoughtfull-systems/nixfiles-secrets";
+    secrets.url = "git+ssh://git@github.com/pjstadig/nixfiles-secrets";
     thoughtfull = {
       inputs = {
         agenix.follows = "agenix";
