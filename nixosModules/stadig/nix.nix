@@ -1,6 +1,6 @@
-{ ... } : {
+{ lib, ... } : {
   thoughtfull.autoUpgrade = {
-    flake = "github:pjstadig/nixfiles/main";
+    flake = lib.mkDefault "github:pjstadig/nixfiles/main";
     inputs = [ "nixpkgs" ];
   };
 }
