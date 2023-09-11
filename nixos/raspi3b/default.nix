@@ -67,7 +67,7 @@
   };
   system = {
     autoUpgrade.flags = [
-      "--override-input secrets git+ssh://git@nixfiles-secrets.github.com/thoughtfull-systems/nixfiles-secrets"
+      "--override-input secrets git+ssh://git@nixfiles-secrets.github.com/pjstadig/nixfiles-secrets"
     ];
     # This value determines the NixOS release from which the default
     # settings for stateful data, like file locations and database versions
