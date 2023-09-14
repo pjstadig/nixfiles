@@ -2,7 +2,6 @@
   home.stateVersion = "22.05";
   imports = [
     stadig.paul
-    thoughtfull.syncthing
   ];
   programs = {
     git = {

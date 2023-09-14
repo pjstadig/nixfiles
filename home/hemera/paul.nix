@@ -13,7 +13,6 @@
   };
   imports = [
     stadig.paul
-    thoughtfull.syncthing
   ];
   thoughtfull = {
     gnome-terminal.enable = true;
