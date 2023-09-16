@@ -20,6 +20,7 @@
         unstable.follows = "unstable";
       };
       url = "github:thoughtfull-systems/nixfiles/main";
+      # url = "/home/paul/src/thoughtfull/nixfiles";
     };
     unstable.url = "github:nixos/nixpkgs/nixos-unstable";
   };
