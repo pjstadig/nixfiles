@@ -25,6 +25,7 @@
     unstable.url = "github:nixos/nixpkgs/nixos-unstable";
   };
   outputs = { hardware, nixpkgs, secrets, self, thoughtfull, ... }@inputs: {
+    inherit thoughtfull;
     homeManagerModules = import ./homeManagerModules;
     nixosConfigurations = {
       hemera = nixpkgs.lib.nixosSystem {
