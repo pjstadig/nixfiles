@@ -2,7 +2,6 @@
   home = {
     packages = with pkgs; [
       adapta-gtk-theme
-      anki-bin
       gparted
       monero-gui
       tor-browser-bundle-bin
@@ -12,6 +11,7 @@
     stateVersion = "22.05";
   };
   imports = [
+    ./anki.nix
     stadig.paul
   ];
   thoughtfull = {
