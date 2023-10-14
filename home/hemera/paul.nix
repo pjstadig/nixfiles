@@ -2,6 +2,7 @@
   home = {
     packages = with pkgs; [
       adapta-gtk-theme
+      calibre
       gparted
       monero-gui
       tor-browser-bundle-bin
