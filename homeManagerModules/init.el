@@ -21,7 +21,7 @@
          ("C-c D" . my-kill-buffer-and-delete-file)))
 (use-package my-completion)
 (use-package my-prog)
-(use-package my-javascript-dev)
+(use-package my-javascript)
 
 (provide 'init)
 ;;; init.el ends here
