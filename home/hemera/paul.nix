@@ -17,7 +17,6 @@
   ];
   thoughtfull = {
     gnome-terminal.enable = true;
-    javascript.enable = true;
     services.syncthing-init.folders = {
       archive = {
         devices = [ "carbon" "raspi3b" ];

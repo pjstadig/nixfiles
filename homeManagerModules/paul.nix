@@ -19,4 +19,5 @@
     };
     zsh.enable = true;
   };
+  thoughtfull.javascript.enable = true;
 }
