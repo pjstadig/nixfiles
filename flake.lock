@@ -4,6 +4,7 @@
       "inputs": {
         "darwin": "darwin",
         "nixpkgs": [
+          "thoughtfull",
           "nixpkgs"
         ]
       },
@@ -25,6 +26,7 @@
     "darwin": {
       "inputs": {
         "nixpkgs": [
+          "thoughtfull",
           "agenix",
           "nixpkgs"
         ]
@@ -63,6 +65,7 @@
     "home-manager": {
       "inputs": {
         "nixpkgs": [
+          "thoughtfull",
           "nixpkgs"
         ]
       },
@@ -99,13 +102,9 @@
     },
     "root": {
       "inputs": {
-        "agenix": "agenix",
         "hardware": "hardware",
-        "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs",
         "secrets": "secrets",
-        "thoughtfull": "thoughtfull",
-        "unstable": "unstable"
+        "thoughtfull": "thoughtfull"
       }
     },
     "secrets": {
@@ -125,32 +124,23 @@
     },
     "thoughtfull": {
       "inputs": {
-        "agenix": [
-          "agenix"
-        ],
-        "home-manager": [
-          "home-manager"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "unstable": [
-          "unstable"
-        ]
+        "agenix": "agenix",
+        "home-manager": "home-manager",
+        "nixpkgs": "nixpkgs",
+        "unstable": "unstable"
       },
       "locked": {
-        "lastModified": 1697454896,
-        "narHash": "sha256-dq3vr+Zizi7RBquOaQtvFqd6a5ibR6ZCriakCEA2KL4=",
-        "owner": "thoughtfull-systems",
-        "repo": "nixfiles",
-        "rev": "ac3a24f20670a252b7bf9fc4837e52488f39369f",
-        "type": "github"
+        "lastModified": 1697472317,
+        "narHash": "sha256-0b7Pk+vf38dlA1KO04CL253wZmLG7MgZeDDhsV6FHeU=",
+        "ref": "refs/heads/main",
+        "rev": "a28448c7b71caf6729ddfc04481126da54f8911b",
+        "revCount": 419,
+        "type": "git",
+        "url": "file:///home/paul/src/thoughtfull/nixfiles"
       },
       "original": {
-        "owner": "thoughtfull-systems",
-        "ref": "main",
-        "repo": "nixfiles",
-        "type": "github"
+        "type": "git",
+        "url": "file:///home/paul/src/thoughtfull/nixfiles"
       }
     },
     "unstable": {
