@@ -3,8 +3,8 @@
   inputs = {
     hardware.url = "github:nixos/nixos-hardware/master";
     secrets.url = "git+ssh://git@github.com/pjstadig/nixfiles-secrets";
-    # thoughtfull.url = "github:thoughtfull-systems/nixfiles/main";
-    thoughtfull.url = "/home/paul/src/thoughtfull/nixfiles";
+    thoughtfull.url = "github:thoughtfull-systems/nixfiles/main";
+    # thoughtfull.url = "/home/paul/src/thoughtfull/nixfiles";
   };
   outputs = { hardware, secrets, self, thoughtfull, ... }@inputs: {
     homeManagerModules = import ./homeManagerModules;
