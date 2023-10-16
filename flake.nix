@@ -10,7 +10,7 @@
       # url = "/home/paul/src/thoughtfull/nixfiles";
     };
   };
-  outputs = { hardware, nixpkgs, secrets, self, thoughtfull, ... }@inputs: {
+  outputs = { hardware, nixpkgs, secrets, self, ... }@inputs: {
     homeManagerModules = import ./homeManagerModules;
     nixosConfigurations = {
       hemera = nixpkgs.lib.nixosSystem {
