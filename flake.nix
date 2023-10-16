@@ -21,7 +21,6 @@
         specialArgs = {
           secrets = secrets.hemera;
           stadig = self.nixosModules;
-          thoughtfull = thoughtfull.nixosModules;
         };
         system = "x86_64-linux";
       };
@@ -30,7 +29,6 @@
         specialArgs = {
           secrets = secrets.raspi3b;
           stadig = self.nixosModules;
-          thoughtfull = thoughtfull.nixosModules;
         };
         system = "aarch64-linux";
       };
@@ -39,7 +37,6 @@
         specialArgs = {
           secrets = secrets.ziph;
           stadig = self.nixosModules;
-          thoughtfull = thoughtfull.nixosModules;
         };
         system = "x86_64-linux";
       };

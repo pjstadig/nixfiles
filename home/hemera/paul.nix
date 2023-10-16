@@ -1,4 +1,4 @@
-{ pkgs, stadig, thoughtfull, ... } : {
+{ pkgs, stadig, ... } : {
   home = {
     packages = with pkgs; [
       adapta-gtk-theme

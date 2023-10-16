@@ -1,4 +1,4 @@
-{ stadig, thoughtfull, ... } : {
+{ stadig, ... } : {
   imports = [
     stadig.paul
   ];
