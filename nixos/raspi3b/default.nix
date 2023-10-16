@@ -1,4 +1,4 @@
-{ config, pkgs, secrets, stadig, thoughtfull, ... }: {
+{ config, pkgs, secrets, stadig, ... }: {
   age.secrets = {
     restic-env.file = secrets.age.restic-env;
     restic-passphrase.file = secrets.age.restic-passphrase;
@@ -53,7 +53,6 @@
     ./paul.nix
     ./root.nix
     stadig.default
-    thoughtfull.default
   ];
   networking = {
     firewall.allowedTCPPorts = [

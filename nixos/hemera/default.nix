@@ -1,4 +1,4 @@
-{ pkgs, stadig, thoughtfull, ... }: {
+{ pkgs, stadig, ... }: {
   boot.loader = {
     efi.canTouchEfiVariables = true;
     systemd-boot.enable = true;
@@ -14,7 +14,6 @@
     ./hardware-configuration.nix
     ./paul.nix
     stadig.default
-    thoughtfull.default
   ];
   networking.hostName = "hemera";
   programs = {
