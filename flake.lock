@@ -103,6 +103,7 @@
     "root": {
       "inputs": {
         "hardware": "hardware",
+        "nixpkgs": "nixpkgs",
         "secrets": "secrets",
         "thoughtfull": "thoughtfull"
       }
@@ -126,7 +127,9 @@
       "inputs": {
         "agenix": "agenix",
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
         "unstable": "unstable"
       },
       "locked": {
