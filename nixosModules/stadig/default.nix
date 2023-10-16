@@ -4,5 +4,6 @@
     ./desktop.nix
     ./home-manager.nix
     ./nix.nix
+    ./ssh.nix
   ];
 }
