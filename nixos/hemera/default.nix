@@ -30,13 +30,9 @@
         RemoteCommand tmux att
         RequestTTY yes
         User root
-      Host raspi3b.unlock
-        ForwardAgent Yes
+      Host unlock.raspi3b.lan
         Hostname raspi3b.lan
         Port 222
-        RemoteCommand cryptsetup-askpass
-        RequestTTY yes
-        User root
     '';
   };
   services = {
