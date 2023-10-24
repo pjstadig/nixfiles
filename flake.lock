@@ -86,11 +86,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1697847256,
-        "narHash": "sha256-EkpIfde5jqjMcjTmWdvUvbdvTPFR9zd/0cUDCGUWE+U=",
+        "lastModified": 1698104575,
+        "narHash": "sha256-vD+Kh3KLVSz5eK1YkNMslKP3/qpB6frRpNLTV/fAfoM=",
         "owner": "thoughtfull-systems",
         "repo": "nixpkgs",
-        "rev": "8ef2072e7757fa5df52669b3d357e91d4452e3d3",
+        "rev": "293c1ed2642ce5fea80e7abbe49d60305c3868b2",
         "type": "github"
       },
       "original": {
@@ -105,7 +105,8 @@
         "hardware": "hardware",
         "nixpkgs": "nixpkgs",
         "secrets": "secrets",
-        "thoughtfull": "thoughtfull"
+        "thoughtfull": "thoughtfull",
+        "unstable": "unstable"
       }
     },
     "secrets": {
@@ -130,14 +131,16 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "unstable": "unstable"
+        "unstable": [
+          "unstable"
+        ]
       },
       "locked": {
-        "lastModified": 1697915087,
-        "narHash": "sha256-jMcsMiVwp1qRt2tuAwuYX9cXwRnFtuFslxb2RbnnvLg=",
+        "lastModified": 1698155997,
+        "narHash": "sha256-VRMwcsUcaa0K4UXiziWfGQwft7VLxkBREeZhxgFtLAQ=",
         "owner": "thoughtfull-systems",
         "repo": "nixfiles",
-        "rev": "5d6b311d8110fe7491245845d614e7a3fb66493c",
+        "rev": "6e6dd6ba1d38da7d95db9cde2a4e383773f0022d",
         "type": "github"
       },
       "original": {
@@ -149,15 +152,15 @@
     },
     "unstable": {
       "locked": {
-        "lastModified": 1697723726,
-        "narHash": "sha256-SaTWPkI8a5xSHX/rrKzUe+/uVNy6zCGMXgoeMb7T9rg=",
-        "owner": "nixos",
+        "lastModified": 1698104548,
+        "narHash": "sha256-k+NKTTPnpZRYusq+PD/UsXCVsYC6lZyUVVFE2OP5bWM=",
+        "owner": "thoughtfull-systems",
         "repo": "nixpkgs",
-        "rev": "7c9cc5a6e5d38010801741ac830a3f8fd667a7a0",
+        "rev": "fb57fd6f78339ea85d9687cd0c8cd260423cd9d8",
         "type": "github"
       },
       "original": {
-        "owner": "nixos",
+        "owner": "thoughtfull-systems",
         "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
