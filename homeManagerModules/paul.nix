@@ -1,9 +1,6 @@
-{ config, lib, pkgs, ... } : {
+{ config, lib, ... } : {
   home = {
     file.".config/emacs/init.el".source = ./init.el;
-    sessionVariables = {
-      PAGER = "${pkgs.less}/bin/less -S";
-    };
     # This value determines the Home Manager release that your
     # configuration is compatible with. This helps avoid breakage
     # when a new Home Manager release introduces backwards
