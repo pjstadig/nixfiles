@@ -1,0 +1,7 @@
+{ stadig, ... }: {
+  home-manager.users.paul.imports = [ ../../home/naarah/paul.nix ];
+  imports = [ stadig.paul ];
+  users.users.paul = {
+    hashedPassword = "$6$FHwQvB6VtmKnyx3V$BNZLfh7N3Ja.YnVh8fPKrRsKmEM.APdUtJwp1/xhQFqJ/1FxgzRQE.V4qMOPOfMqCOV8T9GkkSRM3urafaSK70";
+  };
+}

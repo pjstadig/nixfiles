@@ -27,6 +27,16 @@
         };
         system = "x86_64-linux";
       };
+      naarah = nixpkgs.lib.nixosSystem {
+        modules = [
+          hardware.nixosModules.raspberry-pi-4
+          ./nixos/naarah
+        ];
+        specialArgs = {
+          stadig = self.nixosModules;
+        };
+        system = "aarch64-linux";
+      };
       raspi3b = nixpkgs.lib.nixosSystem {
         modules = [ ./nixos/raspi3b ];
         specialArgs = {
