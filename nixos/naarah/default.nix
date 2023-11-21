@@ -26,6 +26,7 @@
       generic-extlinux-compatible.enable = true;
     };
   };
+  hardware.raspberry-pi."4".poe-hat.enable = true;
   imports = [
     ./filesystems.nix
     ./hardware-configuration.nix
