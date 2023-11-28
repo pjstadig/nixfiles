@@ -42,6 +42,9 @@
   programs.zsh.enable = true;
   services.openssh.enable = true;
   system = {
+    autoUpgrade.flags = [
+      "--override-input secrets git+ssh://git@nixfiles-secrets.github.com/pjstadig/nixfiles-secrets"
+    ];
     stateVersion = "23.05"; # Did you read the comment?
   };
   thoughtfull = {
