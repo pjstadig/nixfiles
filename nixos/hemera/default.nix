@@ -1,7 +1,10 @@
 { pkgs, stadig, ... }: {
-  boot.loader = {
-    efi.canTouchEfiVariables = true;
-    systemd-boot.enable = true;
+  boot = {
+    binfmt.emulatedSystems = [ "aarch64-linux" ];
+    loader = {
+      efi.canTouchEfiVariables = true;
+      systemd-boot.enable = true;
+    };
   };
   hardware = {
     acpilight.enable = true;
