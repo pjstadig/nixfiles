@@ -1,4 +1,8 @@
 { config, pkgs, secrets, stadig, ... }: {
+  age.secrets = {
+    restic-env.file = secrets.age.restic-env;
+    restic-passphrase.file = secrets.age.restic-passphrase;
+  };
   boot = {
     initrd = {
       availableKernelModules = [
@@ -45,9 +49,20 @@
     autoUpgrade.flags = [
       "--override-input secrets git+ssh://git@nixfiles-secrets.github.com/pjstadig/nixfiles-secrets"
     ];
+    # This value determines the NixOS release from which the default
+    # settings for stateful data, like file locations and database versions
+    # on your system were taken. It‘s perfectly fine and recommended to leave
+    # this value at the release version of the first install of this system.
+    # Before changing this value read the documentation for this option
+    # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
     stateVersion = "23.05"; # Did you read the comment?
   };
   thoughtfull = {
     deploy-keys = [ { name = "nixfiles-secrets"; } ];
+    restic = {
+      environmentFile = config.age.secrets.restic-env.path;
+      passwordFile = config.age.secrets.restic-passphrase.path;
+      s3Bucket = "stadig-restic";
+    };
   };
 }
