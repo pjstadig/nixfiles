@@ -2,13 +2,13 @@
   description = "NixOS configuration";
   inputs = {
     hardware.url = "github:nixos/nixos-hardware/master";
-    nixpkgs.url = "github:thoughtfull-systems/nixpkgs/nixos-23.05";
+    nixpkgs.url = "github:thoughtfull-systems/nixpkgs/nixos-23.11";
     # nixpkgs.url = "/home/paul/src/thoughtfull/nixpkgs";
     secrets.url = "git+ssh://git@github.com/pjstadig/nixfiles-secrets";
     thoughtfull = {
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.unstable.follows = "unstable";
-      url = "github:thoughtfull-systems/nixfiles/main";
+      url = "github:thoughtfull-systems/nixfiles/nixos-23.11";
       # url = "/home/paul/src/thoughtfull/nixfiles";
     };
     unstable.url = "github:thoughtfull-systems/nixpkgs/nixos-unstable";
