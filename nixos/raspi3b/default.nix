@@ -33,14 +33,16 @@
     ];
     loader = {
       grub.enable = false;
-      raspberryPi = {
-        enable = true;
-        firmwareConfig = ''
-          hdmi_force_hotplug=1
-        '';
-        uboot.enable = true;
-        version = 3;
-      };
+      generic-extlinux-compatible.enable = true;
+      # could eventually delete these, as they are deprecated
+      # raspberryPi = {
+      #   # enable = true;
+      #   firmwareConfig = ''
+      #     hdmi_force_hotplug=1
+      #   '';
+      #   # uboot.enable = true;
+      #   # version = 3;
+      # };
     };
     tmp.cleanOnBoot = true;
   };
