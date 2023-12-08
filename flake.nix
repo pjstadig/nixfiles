@@ -5,6 +5,7 @@
     nixpkgs.url = "github:thoughtfull-systems/nixpkgs/nixos-23.11";
     # nixpkgs.url = "/home/paul/src/thoughtfull/nixpkgs";
     secrets.url = "git+ssh://git@github.com/pjstadig/nixfiles-secrets";
+    # secrets.url = "/home/paul/src/nixfiles-secrets";
     thoughtfull = {
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.unstable.follows = "unstable";

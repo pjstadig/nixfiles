@@ -111,11 +111,11 @@
     },
     "secrets": {
       "locked": {
-        "lastModified": 1700581881,
-        "narHash": "sha256-9Oh8866VhpemDylpQ1i1cZzQFn6xtoGo/EThOFOlhqg=",
+        "lastModified": 1702048136,
+        "narHash": "sha256-HV7ZPOo18EtWlAitZ5BlpDlxuE8cMBliM8cy/IiZFyE=",
         "ref": "refs/heads/main",
-        "rev": "cf0ae2b5c27520ee8f63658cd6df8f62bf91bcc6",
-        "revCount": 2,
+        "rev": "773e90f7e4b54316e56b1c45b54138c84a2f5d0e",
+        "revCount": 3,
         "type": "git",
         "url": "ssh://git@github.com/pjstadig/nixfiles-secrets"
       },
