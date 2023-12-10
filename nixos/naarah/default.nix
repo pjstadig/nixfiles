@@ -44,7 +44,11 @@
     interfaces.end0.useDHCP = true;
   };
   programs.zsh.enable = true;
-  services.openssh.enable = true;
+  services = {
+    nginx.enable = true;
+    openssh.enable = true;
+    vaultwarden.enable = true;
+  };
   system = {
     autoUpgrade.flags = [
       "--override-input secrets git+ssh://git@nixfiles-secrets.github.com/pjstadig/nixfiles-secrets"
@@ -59,6 +63,7 @@
   };
   thoughtfull = {
     deploy-keys = [ { name = "nixfiles-secrets"; } ];
+    nginx.proxies."bw.stadig.name".backend = "http://localhost:8000";
     restic = {
       environmentFile = config.age.secrets.restic-env.path;
       passwordFile = config.age.secrets.restic-passphrase.path;

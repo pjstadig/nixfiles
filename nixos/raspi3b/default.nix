@@ -62,7 +62,7 @@
   };
   services = {
     nginx.enable = true;
-    vaultwarden.enable = true;
+    vaultwarden.enable = false;
   };
   system = {
     autoUpgrade.flags = [
@@ -78,7 +78,6 @@
   };
   thoughtfull = {
     deploy-keys = [ { name = "nixfiles-secrets"; } ];
-    nginx.proxies."bw.stadig.name".backend = "http://localhost:8000";
     restic = {
       environmentFile = config.age.secrets.restic-env.path;
       passwordFile = config.age.secrets.restic-passphrase.path;
