@@ -19,11 +19,11 @@
     gnome-terminal.enable = true;
     services.syncthing-init.folders = {
       archive = {
-        devices = [ "carbon" "raspi3b" ];
+        devices = [ "carbon" "naarah" "raspi3b" ];
         enable = true;
       };
       obsidian = {
-        devices = [ "carbon" "pixel" "pixel5a" "raspi3b" ];
+        devices = [ "carbon" "naarah" "pixel" "pixel5a" "raspi3b" ];
         enable = true;
       };
       obsidian-work = {
@@ -31,7 +31,7 @@
         enable = true;
       };
       org = {
-        devices = [ "carbon" "pixel" "pixel5a" "raspi3b" ];
+        devices = [ "carbon" "naarah" "pixel" "pixel5a" "raspi3b" ];
         enable = true;
       };
       org-work = {
@@ -39,7 +39,7 @@
         enable = true;
       };
       sync = {
-        devices = [ "bennu" "carbon" "pixel" "pixel5a" "raspi3b" ];
+        devices = [ "bennu" "carbon" "naarah" "pixel" "pixel5a" "raspi3b" ];
         enable = true;
       };
     };

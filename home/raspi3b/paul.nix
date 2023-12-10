@@ -15,19 +15,19 @@
   ];
   thoughtfull.services.syncthing-init.folders = {
     archive = {
-      devices = [ "carbon" "hemera" "ziph" ];
+      devices = [ "carbon" "hemera" "naarah" "ziph" ];
       enable = true;
     };
     obsidian = {
-      devices = [ "carbon" "hemera" "pixel" "pixel5a" "ziph" ];
+      devices = [ "carbon" "hemera" "naarah" "pixel" "pixel5a" "ziph" ];
       enable = true;
     };
     org = {
-      devices = [ "carbon" "hemera" "pixel" "pixel5a" "ziph" ];
+      devices = [ "carbon" "hemera" "naarah" "pixel" "pixel5a" "ziph" ];
       enable = true;
     };
     sync = {
-      devices = [ "bennu" "carbon" "hemera" "pixel" "pixel5a" "ziph" ];
+      devices = [ "bennu" "carbon" "hemera" "naarah" "pixel" "pixel5a" "ziph" ];
       enable = true;
     };
   };

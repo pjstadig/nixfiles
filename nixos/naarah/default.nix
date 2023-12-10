@@ -47,6 +47,27 @@
   services = {
     nginx.enable = true;
     openssh.enable = true;
+    syncthing = {
+      enable = true;
+      settings.folders = {
+        archive = {
+          devices = [ "carbon" "hemera" "raspi3b" "ziph" ];
+          enable = true;
+        };
+        obsidian = {
+          devices = [ "carbon" "hemera" "pixel" "pixel5a" "raspi3b" "ziph" ];
+          enable = true;
+        };
+        org = {
+          devices = [ "carbon" "hemera" "pixel" "pixel5a" "raspi3b" "ziph" ];
+          enable = true;
+        };
+        sync = {
+          devices = [ "bennu" "carbon" "hemera" "pixel" "pixel5a" "raspi3b" "ziph" ];
+          enable = true;
+        };
+      };
+    };
     vaultwarden.enable = true;
   };
   system = {
