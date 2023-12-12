@@ -4,7 +4,7 @@
       "usb_storage"
     ];
     luks.devices.secure = {
-      device = "/dev/sda1";
+      device = "/dev/disk/by-uuid/e351e043-c906-4d91-9451-84859888cced";
       preLVM = true;
     };
   };
