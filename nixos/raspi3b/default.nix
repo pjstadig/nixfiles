@@ -46,7 +46,6 @@
     };
     tmp.cleanOnBoot = true;
   };
-  environment.systemPackages = [ pkgs.execline ];
   imports = [
     ./filesystems.nix
     ./hardware-configuration.nix
