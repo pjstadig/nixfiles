@@ -59,6 +59,7 @@
     ];
     hostName = "raspi3b";
   };
+  programs.tmux.enable = true;
   services = {
     nginx.enable = true;
     vaultwarden.enable = false;

@@ -19,25 +19,6 @@
     stadig.default
   ];
   networking.hostName = "hemera";
-  programs = {
-    ssh.extraConfig = ''
-      Host *.local
-        ForwardAgent yes
-      Host raspi3b.lan
-        ForwardAgent Yes
-        Hostname raspi3b.lan
-        User root
-      Host raspi3b
-        ForwardAgent Yes
-        Hostname raspi3b.lan
-        RemoteCommand tmux att
-        RequestTTY yes
-        User root
-      Host unlock.raspi3b.lan
-        Hostname raspi3b.lan
-        Port 222
-    '';
-  };
   services = {
     openssh.enable = true;
     trezord.enable = true;
