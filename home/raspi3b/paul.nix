@@ -3,13 +3,6 @@
   imports = [
     stadig.paul
   ];
-  programs = {
-    git = {
-      userEmail = "paul@stadig.name";
-      userName = "Paul Stadig";
-    };
-    tmux.enable = true;
-  };
   services.syncthing.extraOptions = [
     "--gui-address=0.0.0.0:8384"
   ];
