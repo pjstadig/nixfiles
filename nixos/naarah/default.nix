@@ -29,6 +29,7 @@
     };
   };
   hardware.raspberry-pi."4".poe-hat.enable = true;
+  home-manager.users.root.programs.tmux.enable = true;
   imports = [
     ./filesystems.nix
     ./hardware-configuration.nix

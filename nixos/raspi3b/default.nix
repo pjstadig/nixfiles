@@ -46,6 +46,7 @@
     };
     tmp.cleanOnBoot = true;
   };
+  home-manager.users.root.programs.tmux.enable = true;
   imports = [
     ./filesystems.nix
     ./hardware-configuration.nix
@@ -59,7 +60,6 @@
     ];
     hostName = "raspi3b";
   };
-  programs.tmux.enable = true;
   services = {
     nginx.enable = true;
     vaultwarden.enable = false;
