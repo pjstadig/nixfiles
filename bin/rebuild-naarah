@@ -1,3 +1,5 @@
 #!/usr/bin/env zsh
 
-nixos-rebuild switch --flake ~/src/nixfiles#naarah --target-host root@naarah.lan --fast "${@}"
+flakedir="$(readlink -f $(dirname $0)/..)"
+
+nixos-rebuild switch --flake "${flakedir}#naarah" --target-host root@naarah.lan --fast "${@}"

@@ -1,6 +1,8 @@
 #!/usr/bin/env zsh
 
-nix flake lock ~/src/nixfiles \
+flakedir="$(readlink -f $(dirname $0)/..)"
+
+nix flake lock "${flakedir}" \
     --refresh \
     --update-input secrets \
     --update-input thoughtfull \

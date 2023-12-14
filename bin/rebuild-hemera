@@ -1,3 +1,5 @@
 #!/usr/bin/env zsh
 
-sudo nixos-rebuild switch --flake ~/src/nixfiles#hemera "${@}"
+flakedir="$(readlink -f $(dirname $0)/..)"
+
+sudo nixos-rebuild switch --flake "${flakedir}#hemera" "${@}"

@@ -1,3 +1,5 @@
 #!/usr/bin/env zsh
 
-nixos-rebuild switch --flake ~/src/nixfiles#raspi3b --target-host root@raspi3b.lan --fast "${@}"
+flakedir="$(readlink -f $(dirname $0)/..)"
+
+nixos-rebuild switch --flake "${flakedir}#raspi3b" --target-host root@raspi3b.lan --fast "${@}"
