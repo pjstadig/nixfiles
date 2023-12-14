@@ -1,9 +1,8 @@
 #!/usr/bin/env zsh
+set -euo pipefail
 
 flakedir="$(readlink -f $(dirname $0)/..)"
 
-nix flake lock "${flakedir}" \
-    --refresh \
-    --update-input secrets \
-    --update-input thoughtfull \
-    --update-input nixpkgs
+rm "${flakedir}/flake.lock"
+
+nix flake lock "${flakedir}" --refresh
