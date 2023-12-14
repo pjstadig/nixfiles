@@ -1,0 +1,7 @@
+#!/usr/bin/env zsh
+
+nix flake lock ~/src/nixfiles \
+    --refresh \
+    --update-input secrets \
+    --update-input thoughtfull \
+    --update-input nixpkgs
