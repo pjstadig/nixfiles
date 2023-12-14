@@ -1,0 +1,3 @@
+#!/usr/bin/env zsh
+
+nixos-rebuild switch --flake ~/src/nixfiles#naarah --target-host root@naarah.lan --fast "${@}"
