@@ -4,6 +4,10 @@
       Host unlock.naarah.lan
         Hostname naarah.lan
         Port 222
+      Host tmux.naarah.lan
+        Hostname naarah.lan
+        RequestTTY yes
+        RemoteCommand tmux att || tmux new
       Host unlock.raspi3b.lan
         Hostname raspi3b.lan
         Port 222
