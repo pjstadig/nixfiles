@@ -1,5 +1,5 @@
 { stadig, ... }: {
-  home.stateVersion = "22.05";
+  home.stateVersion = "23.11";
   imports = [
     stadig.paul
   ];

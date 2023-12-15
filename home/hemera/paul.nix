@@ -9,7 +9,7 @@
       unstable.ledger-live-desktop
       virt-manager
     ];
-    stateVersion = "22.05";
+    stateVersion = "23.11";
   };
   imports = [
     ./anki.nix
