@@ -48,7 +48,12 @@
   };
   home-manager.users.root = {
     home.stateVersion = "23.11";
-    programs.tmux.enable = true;
+    programs.tmux = {
+      enable = true;
+      extraConfig = ''
+        set-option -g status-style fg=white,bg=magenta
+      '';
+    };
   };
   imports = [
     ./filesystems.nix
