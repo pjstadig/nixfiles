@@ -29,12 +29,14 @@
     };
   };
   hardware.raspberry-pi."4".poe-hat.enable = true;
-  home-manager.users.root.programs.tmux.enable = true;
+  home-manager.users.root = {
+    home.stateVersion = "22.05";
+    programs.tmux.enable = true;
+  };
   imports = [
     ./filesystems.nix
     ./hardware-configuration.nix
     ./paul.nix
-    ./root.nix
     stadig.default
   ];
   networking = {
