@@ -1,8 +1,0 @@
-#!/usr/bin/env zsh
-set -euo pipefail
-
-flakedir="$(readlink -f $(dirname $0)/..)"
-
-rm "${flakedir}/flake.lock"
-
-nix flake lock "${flakedir}" --refresh

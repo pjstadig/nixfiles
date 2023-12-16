@@ -3,4 +3,13 @@ set -euo pipefail
 
 flakedir="$(readlink -f $(dirname $0)/..)"
 
-nixos-rebuild switch --flake "${flakedir}#naarah" --target-host root@naarah.lan --fast "${@}"
+nixos-rebuild switch \
+              --flake "${flakedir}#naarah" \
+              --target-host root@naarah.lan \
+              --fast \
+              --refresh \
+              --update-input secrets \
+              --update-input home-manager \
+              --update-input thoughtfull \
+              --update-input nixpkgs \
+              "${@}"

@@ -3,4 +3,11 @@ set -euo pipefail
 
 flakedir="$(readlink -f $(dirname $0)/..)"
 
-sudo nixos-rebuild switch --flake "${flakedir}#hemera" "${@}"
+sudo nixos-rebuild switch \
+     --flake "${flakedir}#hemera" \
+     --refresh \
+     --update-input secrets \
+     --update-input home-manager \
+     --update-input thoughtfull \
+     --update-input nixpkgs \
+     "${@}"

@@ -65,16 +65,15 @@
     "home-manager": {
       "inputs": {
         "nixpkgs": [
-          "thoughtfull",
           "nixpkgs"
         ]
       },
       "locked": {
-        "lastModified": 1702256893,
-        "narHash": "sha256-R/FEpLxCqsDJmm+qjc3FctACH942vSKFYkskQbcRIWs=",
+        "lastModified": 1702688790,
+        "narHash": "sha256-CrVOS55a0h/sj9sa9xqRsm1rC4ROiyeI/ANf4koGuko=",
         "owner": "thoughtfull-systems",
         "repo": "home-manager",
-        "rev": "7187f194923e7704175370e99caf7fd612c211d7",
+        "rev": "0de2026aa02653a1350adb09d14bd8ff2abf002c",
         "type": "github"
       },
       "original": {
@@ -103,6 +102,7 @@
     "root": {
       "inputs": {
         "hardware": "hardware",
+        "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "secrets": "secrets",
         "thoughtfull": "thoughtfull",
@@ -127,7 +127,9 @@
     "thoughtfull": {
       "inputs": {
         "agenix": "agenix",
-        "home-manager": "home-manager",
+        "home-manager": [
+          "home-manager"
+        ],
         "nixpkgs": [
           "nixpkgs"
         ],
@@ -136,11 +138,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1702645218,
-        "narHash": "sha256-w7bwBVvIuDNj2YLfA399MRmqlWlVdcTr3aFLOiv9ro4=",
+        "lastModified": 1702721553,
+        "narHash": "sha256-tYEykO0SjYRUPpzuM9VBNvUQ89ZaC29qfOFktsLBh2g=",
         "owner": "thoughtfull-systems",
         "repo": "nixfiles",
-        "rev": "e6ed88cee3a672c858e01b9483d9a1434d6706a1",
+        "rev": "f7bbf24650391c49b4afdd64416dc59b3ab6470e",
         "type": "github"
       },
       "original": {
