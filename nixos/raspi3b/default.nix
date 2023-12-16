@@ -11,10 +11,6 @@
         # nic for initrd openssh
         "smsc95xx"
       ];
-      luks.devices.secure = {
-        device = "/dev/sda";
-        preLVM = true;
-      };
       network = {
         enable = true;
         ssh = {
