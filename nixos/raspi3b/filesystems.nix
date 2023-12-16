@@ -1,6 +1,6 @@
 { ... }: {
   boot.initrd.luks.devices.secure = {
-    device = "/dev/sda";
+    device = "/dev/disk/by-uuid/cdbce058-1038-4f3e-95de-87b7440a9061";
     preLVM = true;
   };
   fileSystems = {
