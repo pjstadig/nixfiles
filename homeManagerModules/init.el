@@ -22,6 +22,12 @@
 (use-package my-completion)
 (use-package my-prog)
 (use-package my-javascript)
+(use-package my-org-bullets
+  :after org)
+(use-package my-org-faces
+  :after org)
+(use-package org
+  :hook ((org-mode . variable-pitch-mode)))
 
 (provide 'init)
 ;;; init.el ends here
