@@ -22,6 +22,7 @@
 (use-package my-completion)
 (use-package my-prog)
 (use-package my-javascript)
+(use-package my-ol-obsidian)
 (use-package my-org)
 (use-package my-org-bullets
   :after my-org)
