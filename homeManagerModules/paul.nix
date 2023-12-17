@@ -2,6 +2,7 @@
   home.file.".config/emacs/init.el".source = ./init.el;
   programs = {
     emacs.extraPackages = epkgs: with epkgs; [
+      my-org
       my-org-bullets
       my-org-faces
     ];
