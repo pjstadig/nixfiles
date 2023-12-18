@@ -5,6 +5,7 @@
       my-ol-obsidian
       my-org
       my-org-bullets
+      my-org-capture
       my-org-faces
     ];
     git = {
