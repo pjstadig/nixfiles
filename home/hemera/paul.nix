@@ -16,6 +16,7 @@
     stadig.paul
   ];
   thoughtfull = {
+    clojure.enable = true;
     gnome-terminal.enable = true;
     services.syncthing-init.folders = {
       archive = {
