@@ -1,7 +1,6 @@
 {
   description = "NixOS configuration";
   inputs = {
-    hardware.url = "github:nixos/nixos-hardware/master";
     home-manager = {
       inputs.nixpkgs.follows = "nixpkgs";
       url = "github:thoughtfull-systems/home-manager/release-23.11";
@@ -18,12 +17,12 @@
     };
     unstable.url = "github:thoughtfull-systems/nixpkgs/nixos-unstable";
   };
-  outputs = { hardware, nixpkgs, secrets, self, ... }@inputs: {
+  outputs = { nixos-hardware, nixpkgs, secrets, self, ... }@inputs: {
     homeManagerModules = import ./homeManagerModules;
     nixosConfigurations = {
       hemera = nixpkgs.lib.nixosSystem {
         modules = [
-          hardware.nixosModules.lenovo-thinkpad-x13
+          nixos-hardware.nixosModules.lenovo-thinkpad-x13
           ./nixos/hemera
         ];
         specialArgs = {
@@ -34,7 +33,7 @@
       };
       naarah = nixpkgs.lib.nixosSystem {
         modules = [
-          hardware.nixosModules.raspberry-pi-4
+          nixos-hardware.nixosModules.raspberry-pi-4
           ./nixos/naarah
         ];
         specialArgs = {
