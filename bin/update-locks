@@ -3,6 +3,6 @@ set -euo pipefail
 
 flakedir="$(readlink -f $(dirname $0)/..)"
 
-rm "${flakedir}/flake.lock"
+rm -f "${flakedir}/flake.lock"
 
 nix flake lock "${flakedir}" --refresh
