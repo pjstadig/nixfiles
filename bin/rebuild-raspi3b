@@ -8,9 +8,8 @@ nixos-rebuild switch \
               --target-host root@raspi3b.lan \
               --fast \
               --refresh \
-              --update-input home-manager \
-              --update-input nixpkgs \
               --override-input secrets "${flakedir}/../nixfiles-secrets" \
               --override-input thoughtfull "${flakedir}/../thoughtfull/nixfiles" \
               "${@}"
-nix flake lock --refresh --update-input secrets --update-input thoughtfull "${flakedir}"
+
+nix flake lock --refresh "${flakedir}"
