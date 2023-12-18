@@ -6,9 +6,9 @@ flakedir="$(readlink -f $(dirname $0)/..)"
 sudo nixos-rebuild switch \
      --flake "${flakedir}#hemera" \
      --refresh \
-     --override-input secrets "${flakedir}/../nixfiles-secrets" \
      --update-input home-manager \
-     --override-input thoughtfull "${flakedir}/../thoughtfull/nixfiles" \
      --update-input nixpkgs \
+     --override-input secrets "${flakedir}/../nixfiles-secrets" \
+     --override-input thoughtfull "${flakedir}/../thoughtfull/nixfiles" \
      "${@}"
 nix flake lock --refresh --update-input secrets --update-input thoughtfull "${flakedir}"
