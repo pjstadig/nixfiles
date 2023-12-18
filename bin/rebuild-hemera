@@ -3,6 +3,8 @@ set -euo pipefail
 
 flakedir="$(readlink -f $(dirname $0)/..)"
 
+nix flake lock --refresh --update-inputs home-manager --update-inputs nixpkgs "${flakedir}"
+
 sudo nixos-rebuild switch \
      --flake "${flakedir}#hemera" \
      --refresh \
@@ -10,4 +12,4 @@ sudo nixos-rebuild switch \
      --override-input thoughtfull "${flakedir}/../thoughtfull/nixfiles" \
      "${@}"
 
-nix flake lock --refresh "${flakedir}"
+nix flake lock --refresh --update-input secrets --update-input thoughtfull "${flakedir}"
