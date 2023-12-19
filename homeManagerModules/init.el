@@ -25,11 +25,11 @@
 (use-package my-ol-obsidian)
 (use-package my-org)
 (use-package my-org-bullets
-  :after my-org)
+  :after (org my-org))
 (use-package my-org-capture
-  :after my-org)
+  :after (org my-org))
 (use-package my-org-faces
-  :after my-org)
+  :after (org my-org))
 
 (provide 'init)
 ;;; init.el ends here
