@@ -20,7 +20,15 @@
          ("C-x C-b" . my-switch-buffer)
          ("C-c D" . my-kill-buffer-and-delete-file)))
 (use-package my-completion)
-(use-package my-prog)
+(use-package org
+  :after my-gtd)
+(use-package my-gtd
+  :demand t
+  :after org
+  :hook (org-mode . my-gtd-set-regexp))
+(use-package my-gtd-process
+  :after my-gtd
+  :bind ("C-c g p" . my-gtd-process))
 (use-package my-javascript)
 (use-package my-ol-obsidian)
 (use-package my-org)
@@ -30,6 +38,7 @@
   :after (org my-org))
 (use-package my-org-faces
   :after (org my-org))
+(use-package my-prog)
 
 (provide 'init)
 ;;; init.el ends here
