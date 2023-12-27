@@ -24,10 +24,11 @@
   :after my-gtd)
 (use-package my-gtd
   :demand t
-  :after org
+  :bind ("C-c g c" . my-gtd-capture)
   :hook (org-mode . my-gtd-set-regexp))
+(use-package my-gtd-agenda
+  :bind ("C-c g d" . my-gtd-agenda-daily))
 (use-package my-gtd-process
-  :after my-gtd
   :bind ("C-c g p" . my-gtd-process))
 (use-package my-javascript)
 (use-package my-ol-obsidian)
