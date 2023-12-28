@@ -38,7 +38,6 @@
   :after (org my-org))
 (use-package my-org-faces
   :after (org my-org))
-(use-package my-prog)
 
 (provide 'init)
 ;;; init.el ends here
