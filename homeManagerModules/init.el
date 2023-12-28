@@ -7,23 +7,13 @@
 ;; None
 
 ;;; Code:
-
 (require 'use-package)
-(use-package my
-  :demand t
-  ;; Key binding conventions
-  ;; https://www.gnu.org/software/emacs/manual/html_node/elisp/Key-Binding-Conventions.html
-  ;;
-  ;; C-c [letter] is reserved for users
-  ;; <f5> through <f9> are reserved for users
-  :bind (("C-x b" . my-switch-buffer)
-         ("C-x C-b" . my-switch-buffer)
-         ("C-c D" . my-kill-buffer-and-delete-file)))
 (use-package org
   :after my-gtd)
 (use-package my-gtd
-  :demand t
+  :after my
   :bind ("C-c g c" . my-gtd-capture)
+  :demand t
   :hook (org-mode . my-gtd-set-regexp))
 (use-package my-gtd-agenda
   :bind ("C-c g d" . my-gtd-agenda-daily))
