@@ -19,7 +19,6 @@
   :bind (("C-x b" . my-switch-buffer)
          ("C-x C-b" . my-switch-buffer)
          ("C-c D" . my-kill-buffer-and-delete-file)))
-(use-package my-completion)
 (use-package org
   :after my-gtd)
 (use-package my-gtd
