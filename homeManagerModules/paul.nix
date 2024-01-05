@@ -16,5 +16,8 @@
     };
     zsh.enable = true;
   };
-  thoughtfull.javascript.enable = true;
+  thoughtfull = {
+    emacs.gtd.enable = true;
+    javascript.enable = true;
+  };
 }
