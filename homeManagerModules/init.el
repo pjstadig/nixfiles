@@ -7,7 +7,6 @@
 ;; None
 
 ;;; Code:
-(require 'use-package)
 (use-package org)
 (use-package tfl-javascript)
 (use-package tfl-ol-obsidian)
