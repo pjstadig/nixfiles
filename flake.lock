@@ -53,11 +53,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1705281028,
-        "narHash": "sha256-t2JA8+rdAoTKgOPL495bahBmFFKRJh1humeVv/YjL8k=",
+        "lastModified": 1705712854,
+        "narHash": "sha256-mqpYZdMn3A7Zq2H/kzRwr2P3UitBj1/N3UWzB8bLHOc=",
         "owner": "thoughtfull-systems",
         "repo": "home-manager",
-        "rev": "ffb7f5005c1738441a9940361a009f68ec83be65",
+        "rev": "d3e6384a2681ac58383b102062d470bb3d62c70d",
         "type": "github"
       },
       "original": {
@@ -83,11 +83,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1705453653,
-        "narHash": "sha256-9Yzx5UsYvyjNlMCqYDtWPkv5qR0xbZ7moq/KlOK+R0A=",
+        "lastModified": 1705712931,
+        "narHash": "sha256-Uf92nEmpAH3J7viPJbOGpUpVI3TDgdLnbJBhjBsBcY4=",
         "owner": "thoughtfull-systems",
         "repo": "nixpkgs",
-        "rev": "daeed0f992faca645374b30765db9096c7562abd",
+        "rev": "01cc763ffe91d23fd59cf107892ca65430a38a1e",
         "type": "github"
       },
       "original": {
