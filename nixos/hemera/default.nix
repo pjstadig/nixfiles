@@ -20,6 +20,7 @@
     stadig.default
   ];
   networking.hostName = "hemera";
+  programs.adb.enable = true;
   services = {
     openssh.enable = true;
     trezord.enable = true;
