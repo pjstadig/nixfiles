@@ -15,7 +15,7 @@
       };
       url = "github:thoughtfull-systems/nixfiles/nixos-23.11";
     };
-    unstable.url = "github:thoughtfull-systems/nixpkgs/nixos-unstable";
+    unstable.url = "github:thoughtfull-systems/nixpkgs/nixpkgs-unstable";
   };
   outputs = { nixos-hardware, nixpkgs, secrets, self, ... }@inputs: {
     homeManagerModules = import ./homeManagerModules;
