@@ -1,7 +1,7 @@
 { pkgs, ... } : {
   home = {
     packages = with pkgs; [
-      anki-bin
+      unstable.anki-bin
       mpv # needed for audio playback
     ];
   };
