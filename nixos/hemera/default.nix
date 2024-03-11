@@ -10,7 +10,9 @@
     acpilight.enable = true;
     bluetooth.enable = true;
     ledger.enable = true;
-    opengl.enable = true;
+    # zoom requires opengl be disabled; maybe related to
+    # https://github.com/NixOS/nixpkgs/issues/82959 though I don't get a core dump
+    opengl.enable = false;
   };
   home-manager.users.root.home.stateVersion = "23.11";
   imports = [
